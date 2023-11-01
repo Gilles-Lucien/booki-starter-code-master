@@ -72,6 +72,27 @@ nav {
   margin-right: 50px;
 }
 
+
+/****** info-group ***********/
+
+.info-group-filterbar {
+  display: flex;
+}
+
+.filterbar-container {
+    display: flex;
+}
+
+.filterbar-filter {
+    display: flex;
+    align-items: center;
+}
+
+.info-group-infobar {
+  display: flex;
+  align-items: center;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
