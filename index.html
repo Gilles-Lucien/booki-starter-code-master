@@ -15,13 +15,14 @@
     <!--embeded kit fontawesome -->
     <script src="https://kit.fontawesome.com/8108b4e23a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="main-container">
         <header>
             <img class="navbar-logo" src="/images/logo/Booki.png" alt="Logo Booki">
             <nav>
-                <a href="#" id="hebergements-nav">Hébergements</a>
-                <a href="#">Activités</a>
+                <a href="#section-hebergements" class="lien-nav">Hébergements</a>
+                <a href="#section-activites" class="lien-nav">Activités</a>
             </nav>
         </header>
         <main>
@@ -67,16 +68,16 @@
                 </div>
                 <!--infobar -->
                 <div class="info-group-infobar">
-                    <i class="fa-solid fa-info fa-0.5x"></i>
+                    <i class="fa-solid fa-info" id="picto-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
             <!--Hébergements et populaires -->
             <div class="hebergements-and-populaires">
                 <!--Hébergements-->
-                <section class="hebergements">
+                <section class="hebergements" id="section-hebergements">
                     <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                        <h2 class="section-title" >Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
                         <a href="#">
@@ -286,13 +287,13 @@
             </div>
             <!--Activités -->
             <div class="activites">
-                <section>
+                <section id="section-activites">
                     <div class="activites-title">
                         <h2 class="section-title">Activités</h2>
                     </div>
                     <div class="activites-cards">
                         <a href="#" class="card">
-                            <article >
+                            <article>
                                 <img src="./images/activites/reno-laithienne.jpg" alt="photo du vieux port">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -303,7 +304,7 @@
                             </article>
                         </a>
                         <a href="#" class="card">
-                            <article >
+                            <article>
                                 <img src="./images/activites/paul-hermann.jpg" alt="photo du fort de pomègues">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -315,7 +316,7 @@
                             </article>
                         </a>
                         <a href="#" class="card">
-                            <article >
+                            <article>
                                 <img src="./images/activites/kilyan-sockalingum.jpg"
                                     alt="Photo du Parc national des Calanques">
                                 <div class="card-content">
@@ -328,7 +329,7 @@
                             </article>
                         </a>
                         <a href="#" class="card">
-                            <article >
+                            <article>
                                 <img src="./images/activites/florian-wehde.jpg" alt="photo de Notre-Dame-de-la-Garde">
                                 <div class="card-content">
                                     <div class="card-txt">
