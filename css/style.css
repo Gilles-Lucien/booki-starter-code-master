@@ -70,7 +70,11 @@ nav a {
   display: inline-block;
 }
 
-#hebergements-nav {
+.lien-nav {
+    padding-top: 16px;
+}
+
+.lien-nav:hover {
   color: var(--main-color);
   padding-top: 14px;
   border-top: #0065fc solid 2px;
@@ -211,6 +215,10 @@ header {
   border: var(--main-bg-color) solid 1px;
   padding: 10px 15px 10px 15px;
   border-radius: 30px;
+}
+
+#picto-info {
+    font-size: 1em;
 }
 
 /****** Hebergements And Populaires ***********/
