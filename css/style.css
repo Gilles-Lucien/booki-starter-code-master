@@ -135,6 +135,10 @@ header {
   padding: 0px;
 }
 
+.button-searchbar-pin input::placeholder {
+    color: var(--Black, #000);
+}
+
 .button-searchbar-pin input {
   display: flex;
   border: none;
@@ -356,10 +360,11 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 .activites-cards .card {
-  width: 297px;
+  width: 23%;
   padding: 0px;
   padding-bottom: 20px;
 }
