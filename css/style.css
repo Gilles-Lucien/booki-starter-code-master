@@ -1,4 +1,19 @@
-/****** General ***********/
+/***
+ *     ██████  ███████ ███    ██ ███████ ██████   █████  ██      
+ *    ██       ██      ████   ██ ██      ██   ██ ██   ██ ██      
+ *    ██   ███ █████   ██ ██  ██ █████   ██████  ███████ ██      
+ *    ██    ██ ██      ██  ██ ██ ██      ██   ██ ██   ██ ██      
+ *     ██████  ███████ ██   ████ ███████ ██   ██ ██   ██ ███████ 
+ *                                                               
+ *                                                               
+ *                                                               
+ *                                                               
+ *                                                               
+ *                                                               
+ *                                                               
+ *                                                               
+ *                                                               
+ */
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -59,7 +74,15 @@ a {
   color: var(--main-bg-color);
 }
 
-/****** navbar ***********/
+/***
+ *    ███    ██  █████  ██    ██ ██████   █████  ██████  
+ *    ████   ██ ██   ██ ██    ██ ██   ██ ██   ██ ██   ██ 
+ *    ██ ██  ██ ███████ ██    ██ ██████  ███████ ██████  
+ *    ██  ██ ██ ██   ██  ██  ██  ██   ██ ██   ██ ██   ██ 
+ *    ██   ████ ██   ██   ████   ██████  ██   ██ ██   ██ 
+ *                                                       
+ *                                                       
+ */
 
 nav {
   height: 79px;
@@ -71,7 +94,7 @@ nav a {
 }
 
 .lien-nav {
-    padding-top: 16px;
+  padding-top: 16px;
 }
 
 .lien-nav:hover {
@@ -94,7 +117,15 @@ header {
   align-items: center;
 }
 
-/****** info-group ***********/
+/***
+ *    ██ ███    ██ ███████  ██████         ██████  ██████   ██████  ██    ██ ██████  
+ *    ██ ████   ██ ██      ██    ██       ██       ██   ██ ██    ██ ██    ██ ██   ██ 
+ *    ██ ██ ██  ██ █████   ██    ██ █████ ██   ███ ██████  ██    ██ ██    ██ ██████  
+ *    ██ ██  ██ ██ ██      ██    ██       ██    ██ ██   ██ ██    ██ ██    ██ ██      
+ *    ██ ██   ████ ██       ██████         ██████  ██   ██  ██████   ██████  ██      
+ *                                                                                   
+ *                                                                                   
+ */
 
 .info-group {
   margin-bottom: 35px;
@@ -140,7 +171,7 @@ header {
 }
 
 .button-searchbar-pin input::placeholder {
-    color: var(--Black, #000);
+  color: var(--Black, #000);
 }
 
 .button-searchbar-pin input {
@@ -162,13 +193,29 @@ header {
   color: white;
   background-color: var(--main-color);
   border-radius: 0px 15px 15px 0px;
-  padding: 16px 15px 16px 15px;
+  padding: 0px 16px;
   font-weight: 600;
+  font-size: 18px;
+}
+
+.button-searchbar-magnifying-glass {
+  border: none;
+  background-color: var(--main-color);
+  border-radius: 15px 15px 15px 15px;
+  padding: 0px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  display: none;
+}
+
+.fa-magnifying-glass {
+  color: white;
 }
 
 /*****filterbar******/
 .info-group-filterbar {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 35px;
 }
@@ -218,10 +265,18 @@ header {
 }
 
 #picto-info {
-    font-size: 1em;
+  font-size: 1em;
 }
 
-/****** Hebergements And Populaires ***********/
+/***
+ *    ██   ██ ███████ ██████  ███████ ██████   ██████  ███████ ███    ███ ███████ ███    ██ ████████        ██        ██████   ██████  ██████  ██    ██ ██       █████  ██ ██████  ███████ ███████ 
+ *    ██   ██ ██      ██   ██ ██      ██   ██ ██       ██      ████  ████ ██      ████   ██    ██           ██        ██   ██ ██    ██ ██   ██ ██    ██ ██      ██   ██ ██ ██   ██ ██      ██      
+ *    ███████ █████   ██████  █████   ██████  ██   ███ █████   ██ ████ ██ █████   ██ ██  ██    ██        ████████     ██████  ██    ██ ██████  ██    ██ ██      ███████ ██ ██████  █████   ███████ 
+ *    ██   ██ ██      ██   ██ ██      ██   ██ ██    ██ ██      ██  ██  ██ ██      ██  ██ ██    ██        ██  ██       ██      ██    ██ ██      ██    ██ ██      ██   ██ ██ ██   ██ ██           ██ 
+ *    ██   ██ ███████ ██████  ███████ ██   ██  ██████  ███████ ██      ██ ███████ ██   ████    ██        ██████       ██       ██████  ██       ██████  ███████ ██   ██ ██ ██   ██ ███████ ███████ 
+ *                                                                                                                                                                                                 
+ *                                                                                                                                                                                                 
+ */
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
@@ -340,7 +395,15 @@ header {
   margin-bottom: 5px;
 }
 
-/************** Activités *************/
+/***
+ *     █████   ██████ ████████ ██ ██    ██ ██ ████████ ███████ ███████ 
+ *    ██   ██ ██         ██    ██ ██    ██ ██    ██    ██      ██      
+ *    ███████ ██         ██    ██ ██    ██ ██    ██    █████   ███████ 
+ *    ██   ██ ██         ██    ██  ██  ██  ██    ██    ██           ██ 
+ *    ██   ██  ██████    ██    ██   ████   ██    ██    ███████ ███████ 
+ *                                                                     
+ *                                                                     
+ */
 
 .activites {
   display: flex;
@@ -368,7 +431,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .activites-cards .card {
@@ -393,7 +455,15 @@ header {
   margin-bottom: 0px;
 }
 
-/************** Footer *************/
+/***
+ *    ███████  ██████   ██████  ████████ ███████ ██████  
+ *    ██      ██    ██ ██    ██    ██    ██      ██   ██ 
+ *    █████   ██    ██ ██    ██    ██    █████   ██████  
+ *    ██      ██    ██ ██    ██    ██    ██      ██   ██ 
+ *    ██       ██████   ██████     ██    ███████ ██   ██ 
+ *                                                       
+ *                                                       
+ */
 
 .footer {
   display: flex;
@@ -427,6 +497,15 @@ header {
   margin-left: 20px;
 }
 
+/***
+ *    ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
+ *    ████  ████ ██      ██   ██ ██ ██   ██     ██    ██ ██    ██ ██      ██   ██ ██ ██      ██      
+ *    ██ ████ ██ █████   ██   ██ ██ ███████     ██    ██ ██    ██ █████   ██████  ██ █████   ███████ 
+ *    ██  ██  ██ ██      ██   ██ ██ ██   ██     ██ ▄▄ ██ ██    ██ ██      ██   ██ ██ ██           ██ 
+ *    ██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██ ██ ███████ ███████ 
+ *                                                  ▀▀                                               
+ *                                                                                                   
+ */
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -462,9 +541,181 @@ header {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .activites-cards {
+    gap: 30px;
+  }
+
+  .activites-cards img {
+    height: 200px;
+  }
+
+  .info-group-filterbar {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  /* ... */
+@media (max-width: /*767.98px*/768px) {
+  body {
+    margin: 0px;
+  }
+
+  .main-container {
+    padding: 0px;
+  }
+  /*navbar******/
+  nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  nav a {
+    display: flex;
+  }
+
+  .lien-nav {
+    margin: 0px;
+    width: 50%;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: #f2f2f2 solid 2px;
+  }
+
+  .lien-nav:hover {
+    color: var(--main-color);
+    border-top: none;
+    border-bottom: #0065fc solid 2px;
+  }
+
+  .navbar-logo {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*info-group******/
+  .info-group {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .info-group-headline h2 {
+    font-size: 22px;
+  }
+
+  .info-group-headline p {
+    font-size: 16px;
+  }
+
+  .button-searchbar-search {
+    display: none;
+  }
+
+  .button-container {
+    display: flex;
+  }
+
+  .button-searchbar-magnifying-glass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 28px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .button-searchbar-pin input {
+    text-align: left;
+    padding-left: 24px;
+  }
+
+  .filterbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .info-group-filterbar h3 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .filterbar-filter {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    width: 35%;
+    gap: 10px;
+  }
+
+  .romantique-filter,
+  .nos-pepites-filter {
+    margin-bottom: 0px;
+  }
+
+  .filterbar-filter p {
+    padding: 0px;
+  }
+
+  .info-group-infobar {
+    font-size: 16px;
+  }
+
+  .fa-info {
+    padding: 5px 9px 5px 9px;
+  }
+
+  #picto-info {
+    font-size: 0.7em;
+  }
+
+  /***Hebergements et populaires***/
+
+  .hebergements-and-populaires section {
+    border-radius: 0px;
+    padding: 20px;
+  }
+
+  .hebergements-cards {
+    flex-direction: column;
+  }
+
+  .hebergements-cards .card {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+
+
+  /******/
+
+  .activites-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .div-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .section-footer {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .div-footer :last-child {
+    margin-bottom: 0px;
+  }
 }
