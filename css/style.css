@@ -6,12 +6,7 @@
  *     ██████  ███████ ██   ████ ███████ ██   ██ ██   ██ ███████ 
  *                                                               
  *                                                               
- *                                                               
- *                                                               
- *                                                               
- *                                                               
- *                                                               
- *                                                               
+                                                        
  *                                                               
  */
 * {
@@ -671,6 +666,10 @@ header {
     font-size: 16px;
   }
 
+  .info-group-infobar p {
+    margin-bottom: 0px;
+  }
+
   .fa-info {
     padding: 5px 9px 5px 9px;
   }
@@ -686,6 +685,22 @@ header {
     padding: 20px;
   }
 
+  #section-hebergements {
+    order: 2;
+  }
+
+  #section-populaires {
+    order: 1;
+  }
+
+  #section-populaires {
+    margin-top: 0px;
+    padding: 30px 20px 30px 20px;
+    margin-bottom: 15px;
+  }
+
+  /*hebergements*/
+
   .hebergements-cards {
     flex-direction: column;
   }
@@ -693,16 +708,42 @@ header {
   .hebergements-cards .card {
     margin-top: 15px;
     width: 100%;
+    box-sizing: border-box; /*pour que le padding soit pris en compte dans la largeur*/
   }
 
+  #section-hebergements {
+    background-color: #fff;
+  }
 
+  /*populaires*/
 
-  /******/
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+/*activités*/
 
   .activites-cards {
     flex-direction: column;
     gap: 15px;
   }
+
+  .activites-cards .card {
+    width: 100%;
+  }
+
+  .activites-cards .card-content {
+    padding-left: 19px;
+  }
+
+/*footer*/
+
   .div-footer {
     display: flex;
     flex-direction: column;
